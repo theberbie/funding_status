@@ -8,7 +8,7 @@ require 'mechanize'
 client = Mechanize.new
 
 
-get '/funding_status' do 
+post '/funding_status' do 
 
 @projects = []
 successful_projects = []
