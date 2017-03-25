@@ -19,7 +19,7 @@ end
 
 
 
-1.upto(10) do |page_number| 
+1.upto(40) do |page_number| 
 	client.get("https://www.backerkit.com/backertracker?page=#{page_number}") do |page|
 
 	document = Nokogiri::HTML::Document.parse(page.body)
